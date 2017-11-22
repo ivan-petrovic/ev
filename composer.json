@@ -1,0 +1,9 @@
+{
+    "name": "ivan-petrovic/ev",
+    "description": "Aplikacija za evidenciju volontera.",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+    }
+}
