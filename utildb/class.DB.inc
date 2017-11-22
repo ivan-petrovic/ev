@@ -33,6 +33,7 @@ class DB {
 	  $this->_connection = new mysqli($host, $username, $password, $dbname);
       // Error handling.
       if (mysqli_connect_error()) {
+		echo "GRESKA";
          trigger_error('Failed to connect to MySQL: ' . mysqli_connect_error(), E_USER_ERROR);
       }
    }
