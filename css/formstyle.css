@@ -1,0 +1,32 @@
+/* form styling */
+form {
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+form p {
+   margin: 0;
+   padding: 5px;
+}
+label {
+   display: inline-block;
+   width: 250px;
+   text-align: right;
+   margin-right: 10px;
+   margin-bottom: 3px;
+}
+input {
+   width: 250px;
+}
+select {
+   width: 250px;
+}
+input[type="submit"] {
+   width: 100px;
+   margin: 10px 0 10px 219px;  /* Odokativno sam nacentrirao */
+}
+div.error {
+   width: 600px;
+   margin: 10px 0 10px 20px;
+   background-color: #e8adaa;
+   border: 1px solid #f00;
+}

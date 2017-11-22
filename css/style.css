@@ -1,0 +1,159 @@
+html, body, h1, h2, h3, ul, li, a, p {
+   margin: 0;
+   padding: 0;
+}
+html {
+   background: #ddd;
+}
+body {
+   background: white;
+   font: 1em Arial, Helvetica, sans-serif;
+   border-radius: 7px;
+   /* color: #353535; */
+}
+/* header of page */
+header {
+   border-bottom: 2px solid #ddd;
+   padding: 5px;
+   background: #7ac141;
+}
+header h1 {
+   width: 961px;
+   margin: 0 auto;
+   color: white;
+   padding: 8px;
+   padding-left: 50px;
+}
+/* navigation of page */
+nav {
+   width: 961px;
+   margin: 0 auto;
+   overflow: hidden;
+   background-image: url("belhospice-logo-200.jpg");
+   background-repeat: no-repeat;
+   background-position: 650px 5px;
+   height: 70px;
+   padding: 2px;
+}
+nav li {
+   float: left;
+   list-style: none;
+   width: 119px;
+   margin-top: 16px;
+}
+nav a {
+   color: black;
+   display: block;
+   padding: 10px;
+   text-decoration: none;
+   text-align: center;
+   font-weight: bold;
+}
+nav li a.menu-active {
+   color: #7ac141;
+   font-weight: bold;
+}
+nav a:hover {
+   color: #7ac141;
+   font-weight: bold;
+}
+/* content of page */
+section {
+   width: 961px;
+   margin: 0 auto;
+   overflow: auto;
+   border-top: 1px solid #ccc;
+}
+/* content off page - article */
+article h3 {
+   padding-top: 1em;
+   padding-left: 1em;
+}
+article p {
+   padding-top: 1em;
+   padding-left: 1em;
+}
+article ul {
+   padding-top: 1em;
+   padding-left: 2em;
+}
+article li {
+   list-style: none;
+}
+article a {
+   text-align: left;
+   border: none;
+   text-decoration: underline;
+}
+/* back to button styling */
+p.button {
+   clear: right;
+   float: left;
+   margin: 0;
+   padding: 0;
+}
+p.button a {
+   color: black;
+   display: block;
+   padding: .5em;
+   text-decoration: none;
+   text-align: center;
+   border-bottom: 2px solid white;   
+}
+p.button a {
+   border: 1px solid black;
+   border-radius: 7px;
+   width: 140px;
+   margin: 0 .5em .5em 15px;
+   padding: 3px;
+   line-height: 1.5em;
+   text-align: center;
+   text-decoration: none;
+}
+p.button a:hover {
+   font-weight: bold;
+   background: #ddd;
+}
+table.izmena-rate input {
+   width: 15em;
+}
+table.izmena-rate select {
+   width: 10em;
+}
+/* footer of page */
+footer {
+   background: #ddd;
+   clear: both;
+   height: 2em;
+   padding: .5em;
+   text-align: center;
+   color: #848587;
+}
+/* razno */
+hr {
+   clear: both;
+}
+@media print {
+   header {
+      display: none;
+   }
+   nav {
+      display: none;
+   }
+   footer {
+      display: none;
+   }
+   p.button {
+      display: none;
+   }
+   div.listic {
+      page-break-inside: avoid;
+   }
+   hr {
+      display: none;
+   }
+   section {
+      border-top: none;
+      border-bottom: none;
+   }
+}

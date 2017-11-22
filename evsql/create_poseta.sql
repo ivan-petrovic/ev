@@ -1,0 +1,12 @@
+# Napravi tabelu poseta
+
+DROP TABLE IF EXISTS poseta;
+
+CREATE TABLE poseta (
+   id MEDIUMINT UNSIGNED NOT NULL AUTO_INCREMENT,
+   volonterID SMALLINT UNSIGNED NOT NULL,
+   pacijentID SMALLINT UNSIGNED NOT NULL,
+   brojSati DECIMAL(4,2) NOT NULL DEFAULT 0,
+   datumPosete DATE,
+   PRIMARY KEY (id)
+);
