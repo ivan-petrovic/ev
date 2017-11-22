@@ -12,7 +12,7 @@ class PosetaDelete extends PosetaPage implements RenderHTML {
 
    public function execute() {
       PosetaDB::delete($this->posid);
-      $adr  = "Location: http://localhost/ev/poseta.php?opID=" . PosetaPageDispatcher::LIST_POSETA;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/poseta.php?opID=" . PosetaPageDispatcher::LIST_POSETA;
       header($adr);
       exit;
    }

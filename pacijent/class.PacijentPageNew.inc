@@ -55,7 +55,7 @@ class PacijentNew extends PacijentPage implements RenderHTML {
 
    protected function save(Pacijent $pacijent) {
       $rez = PacijentDB::insert($pacijent); // return value is array(insert_id, affected_rows)
-      $adr  = "Location: http://localhost/ev/pacijent.php?opID=" . PacijentPageDispatcher::DETAILS_PACIJENT;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/pacijent.php?opID=" . PacijentPageDispatcher::DETAILS_PACIJENT;
       $adr .= "&pacijentID=" . $rez[0];
       header($adr);
       exit;

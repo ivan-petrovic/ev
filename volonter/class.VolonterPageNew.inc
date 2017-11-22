@@ -55,7 +55,7 @@ class VolonterNew extends VolonterPage implements RenderHTML {
 
    protected function save(Volonter $volonter) {
       $rez = VolonterDB::insert($volonter); // return value is array(insert_id, affected_rows)
-      $adr  = "Location: http://localhost/ev/volonter.php?opID=" . VolonterPageDispatcher::DETAILS_VOLONTER;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/volonter.php?opID=" . VolonterPageDispatcher::DETAILS_VOLONTER;
       $adr .= "&volonterID=" . $rez[0];
       header($adr);
       exit;

@@ -57,7 +57,7 @@ class PosetaNew extends PosetaPage implements RenderHTML {
 
    protected function save(Poseta $poseta) {
       $rez = PosetaDB::insert($poseta); // return value is array(insert_id, affected_rows)
-      $adr  = "Location: http://localhost/ev/poseta.php?opID=" . PosetaPageDispatcher::DETAILS_POSETA;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/poseta.php?opID=" . PosetaPageDispatcher::DETAILS_POSETA;
       $adr .= "&posetaID=" . $rez[0];
       header($adr);
       exit;

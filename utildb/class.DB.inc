@@ -33,7 +33,7 @@ class DB {
 
         $this->_connection = new mysqli($server, $username, $password, $db);
         /*
-	  $host = "ec2-54-75-225-143.eu-west-1.compute.amazonaws.com"; // localhost
+	  $host = "ec2-54-75-225-143.eu-west-1.compute.amazonaws.com"; //
 	  $port = 5432;
 	  $dbname = "d57m7p772t3f36";	// ev
 	  $username = "lxtqwypoccnksi";	// root

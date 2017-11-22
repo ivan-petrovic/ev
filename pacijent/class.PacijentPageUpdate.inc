@@ -56,7 +56,7 @@ class PacijentUpdate extends PacijentPage implements RenderHTML {
    protected function save(Pacijent $pacijent) {
       $pid = $pacijent->getValue('id');
       PacijentDB::update($pacijent);
-      $adr  = "Location: http://localhost/ev/pacijent.php?opID=" . PacijentPageDispatcher::DETAILS_PACIJENT;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/pacijent.php?opID=" . PacijentPageDispatcher::DETAILS_PACIJENT;
       $adr .= "&pacijentID=" . $pid;
       header($adr);
       exit;

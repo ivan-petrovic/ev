@@ -12,7 +12,7 @@ class PacijentDelete extends PacijentPage implements RenderHTML {
 
    public function execute() {
       PacijentDB::delete($this->pid);
-      $adr  = "Location: http://localhost/ev/pacijent.php?opID=" . PacijentPageDispatcher::LIST_PACIJENT;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/pacijent.php?opID=" . PacijentPageDispatcher::LIST_PACIJENT;
       header($adr);
       exit;
    }
@@ -27,7 +27,7 @@ class PacijentActivate extends PacijentPage implements RenderHTML {
 
    public function execute() {
       PacijentDB::activate($this->pid);
-      $adr  = "Location: http://localhost/ev/pacijent.php?opID=" . PacijentPageDispatcher::LIST_PACIJENT;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/pacijent.php?opID=" . PacijentPageDispatcher::LIST_PACIJENT;
       header($adr);
       exit;
    }

@@ -56,7 +56,7 @@ class VolonterUpdate extends VolonterPage implements RenderHTML {
    protected function save(Volonter $volonter) {
       $vid = $volonter->getValue('id');
       VolonterDB::update($volonter);
-      $adr  = "Location: http://localhost/ev/volonter.php?opID=" . VolonterPageDispatcher::DETAILS_VOLONTER;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/volonter.php?opID=" . VolonterPageDispatcher::DETAILS_VOLONTER;
       $adr .= "&volonterID=" . $vid;
       header($adr);
       exit;

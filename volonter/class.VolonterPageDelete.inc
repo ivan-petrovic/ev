@@ -12,7 +12,7 @@ class VolonterDelete extends VolonterPage implements RenderHTML {
 
    public function execute() {
       VolonterDB::delete($this->vid);
-      $adr  = "Location: http://localhost/ev/volonter.php?opID=" . VolonterPageDispatcher::LIST_VOLONTER;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/volonter.php?opID=" . VolonterPageDispatcher::LIST_VOLONTER;
       header($adr);
       exit;
    }
@@ -27,7 +27,7 @@ class VolonterActivate extends VolonterPage implements RenderHTML {
 
    public function execute() {
       VolonterDB::activate($this->vid);
-      $adr  = "Location: http://localhost/ev/volonter.php?opID=" . VolonterPageDispatcher::LIST_VOLONTER;
+      $adr  = "Location: https://vast-spire-24114.herokuapp.com/volonter.php?opID=" . VolonterPageDispatcher::LIST_VOLONTER;
       header($adr);
       exit;
    }
