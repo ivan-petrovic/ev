@@ -1,9 +1,12 @@
 {
     "name": "ivan-petrovic/ev",
-    "description": "Aplikacija za evidenciju volontera.",
+    "description": "Aplikacija za evidenciju volontera",
     "license": "MIT",
-    "type": "project",
-    "require": {
-        "php": ">=7.0.0",
-    }
+    "authors": [
+        {
+            "name": "Ivan Petrovic",
+            "email": "mangan77@gmail.com"
+        }
+    ],
+    "require": {}
 }
