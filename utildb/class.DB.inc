@@ -43,8 +43,10 @@ class DB {
          */
       // Error handling.
       if (mysqli_connect_error()) {
-		echo "GRESKA";
-         trigger_error('Failed to connect to MySQL: ' . mysqli_connect_error(), E_USER_ERROR);
+	echo "GRESKA";
+        trigger_error('Failed to connect to MySQL: ' . mysqli_connect_error(), E_USER_ERROR);
+      } else {
+          echo "POVEZAN: " . $server . "---" . $username . "---" . $password . "---" . $db;
       }
    }
 
