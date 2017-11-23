@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/ev/poseta/class.PosetaPageList.inc</file>
-            <file>file:/C:/wamp/www/ev/volonter/class.Volonter.inc</file>
+            <file>file:/D:/Programi/ev/util/class.FormMaker.inc</file>
+            <file>file:/D:/Programi/ev/volonter/class.VolonterPageNew.inc</file>
+            <file>file:/D:/Programi/ev/volonter/class.VolonterPageDetail.inc</file>
         </group>
     </open-files>
 </project-private>
